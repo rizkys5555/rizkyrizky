@@ -1,0 +1,22 @@
+Milestone Report: Exploratory Data Analysis
+1. Introduction
+This report summarizes the initial analysis of the text datasets provided by SwiftKey (blogs, news, and Twitter). The primary focus is to understand the data structure before building a next-word prediction model for the Shiny application.
+2. Data Summaries
+The first step involves loading the data and calculating basic statistics such as the number of lines and word counts.
+Summary Table Example:
+Source	Line Count	Word Count	File Size (MB)
+Blogs	899,288	~37.5 Million	200+ MB
+News	1,010,242	~34.7 Million	190+ MB
+Twitter	2,360,148	~30.0 Million	160+ MB
+3. Exploratory Analysis & Visualization
+After cleaning the data (removing punctuation, numbers, and converting to lowercase), we can observe the word frequency distribution using histograms or word clouds.
+
+    Interesting Findings: Common stop words such as "the", "to", and "and" dominate the dataset.
+    Histogram: (This section will include n-gram frequency plots, such as the top 20 most frequent words).
+
+4. Plans for Algorithm & Shiny Application
+Future strategies include:
+
+    N-gram Model: Utilizing Bigram and Trigram models to predict words based on previous context.
+    Optimization: Due to the large dataset size, I will use sampling techniques (e.g., 1-5% of the data) to ensure the Shiny app remains lightweight and responsive.
+    Shiny Application: The user interface will consist of a simple text input box that automatically displays next-word suggestions.
